@@ -1,0 +1,21 @@
+[submodule "aake_src"]
+	path = aake_src
+	url = git@github.com:ARK-OS-Swift-and-Linux/aake.git
+[submodule "arkrt"]
+	path = arkrt
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-arkrt.git
+[submodule "boot"]
+	path = boot
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-boot.git
+[submodule "frameworks"]
+	path = frameworks
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-frameworks.git
+[submodule "kernel"]
+	path = kernel
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-kernel.git
+[submodule "prebuilts"]
+	path = prebuilts
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-prebuilts.git
+[submodule "system"]
+	path = system
+	url = git@ark-os.duckdns.org:Aarav90-cpu/ark-os-system.git
