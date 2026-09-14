@@ -2,6 +2,12 @@
 
 A Linux-based operating system built from scratch — designed to be easy to use, easy to compile, and open for customization.
 
+
+You can sync the repo via:
+```bash
+curl -fsSL https://raw.githubusercontent.com/ARK-OS-Swift-and-Linux/main/refs/heads/main/sync.sh | bash
+```
+
 > [!DISCLAMER]
 >
 > Building now requires a Stable Internet Connection!
