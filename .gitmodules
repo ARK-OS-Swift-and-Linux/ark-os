@@ -19,3 +19,6 @@
 [submodule "system"]
 	path = system
 	url = git@ark-os.duckdns.org:Aarav90-cpu/ark-os-system.git
+[submodule "vendor"]
+        path = vendor
+        url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-vendor.git

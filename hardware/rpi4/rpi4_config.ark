@@ -1,0 +1,80 @@
+#
+# Copyright 2026 Aarav Ravindra Kharade
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# ═══════════════════════════════════════════════════════════════
+#  ArkOS Raspberry Pi 4 Model B Hardware Configuration
+# ═══════════════════════════════════════════════════════════════
+
+--- hardware ---
+
+device_name = Raspberry Pi 4 Model B
+soc = BCM2711
+cpu = Cortex-A72
+cpu_cores = 4
+cpu_arch = aarch64
+ram_mb = 2048
+gpu = VideoCore VI
+
+--- firmware ---
+
+gpu_bootloader = boot/rpi4/firmware/start4.elf
+gpu_fixup = boot/rpi4/firmware/fixup4.dat
+config_file = boot/rpi4/config.txt
+cmdline_file = boot/rpi4/cmdline.txt
+
+--- kernel ---
+
+kernel_image = kernel/prebuilts/arm64
+kernel_name = kernel8.img
+dtb_file = kernel/prebuilts/bcm2711-rpi-4-b.dtb
+dtbo_dir = kernel/prebuilts/rpi4_dtbofiles
+initramfs = boot/initramfs.img
+kernel_load_address = 0x80000
+
+--- compiler ---
+
+cc = clang
+target_triple = aarch64-linux-gnu
+swift_triple = aarch64-swift-linux-musl
+sysroot = system/sysrootaarch64
+modules_dir = system/sysrootaarch64
+
+--- display ---
+
+display_driver = vc4-drm
+framebuffer = /dev/fb0
+default_resolution = 1920x1080
+bits_per_pixel = 32
+boot_animation = atom_only
+expanding_dot = swift_splash
+
+--- partitions ---
+
+boot_partition_fs = fat32
+boot_partition_size_mb = 256
+system_partition_fs = ext4
+system_partition_size_mb = 2048
+vendor_partition_fs = ext4
+vendor_partition_size_mb = 100
+
+--- boot_sequence ---
+
+stage1 = gpu_firmware
+stage2 = kernel_direct
+stage3 = init
+stage4 = arkrt
+stage5 = ui_daemon
+bootloader_type = none
