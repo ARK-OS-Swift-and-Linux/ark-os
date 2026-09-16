@@ -1,0 +1,142 @@
+warning: 'kernel': dependency 'swift-atomics' is not used by any target
+warning: 'kernel': dependency 'swift-numerics' is not used by any target
+[0/1] Planning build
+[1/1] Compiling plugin SVD2SwiftPlugin
+[2/2] Compiling plugin GenerateManual
+[3/3] Compiling plugin GenerateDoccReference
+Building for debugging...
+[3/5] Write swift-version-5BD8B568FD16BF8B.txt
+Build complete! (4.07s)
+[0/1] Planning build
+[1/1] Compiling plugin GRPCSwiftPlugin
+[2/2] Compiling plugin SwiftProtobufPlugin
+Building for debugging...
+[2/4] Write swift-version-5BD8B568FD16BF8B.txt
+[4/88] Compiling SwiftProtobuf Message+BinaryAdditions_Data.swift
+[5/88] Compiling SwiftProtobuf Message+FieldMask.swift
+[6/88] Compiling SwiftProtobuf Message+JSONAdditions.swift
+[7/88] Compiling SwiftProtobuf Message+JSONAdditions_Data.swift
+[8/88] Compiling SwiftProtobuf Message+JSONArrayAdditions.swift
+[9/88] Compiling SwiftProtobuf Message+JSONArrayAdditions_Data.swift
+[10/88] Compiling SwiftProtobuf Message+TextFormatAdditions.swift
+[11/88] Compiling SwiftProtobuf Message.swift
+[12/88] Compiling SwiftProtobuf MessageExtension.swift
+[13/88] Compiling SwiftProtobuf NameMap.swift
+[14/88] Compiling SwiftProtobuf PathDecoder.swift
+[15/88] Compiling SwiftProtobuf PathVisitor.swift
+[16/99] Compiling SwiftProtobuf ProtoNameProviding.swift
+[17/99] Compiling SwiftProtobuf ProtobufAPIVersionCheck.swift
+[18/99] Compiling SwiftProtobuf ProtobufMap.swift
+[19/99] Compiling SwiftProtobuf SelectiveVisitor.swift
+[20/99] Compiling SwiftProtobuf SimpleExtensionMap.swift
+[21/99] Compiling SwiftProtobuf StringUtils.swift
+[22/99] Compiling SwiftProtobuf SwiftProtobufContiguousBytes.swift
+[23/99] Compiling SwiftProtobuf SwiftProtobufError.swift
+[24/99] Compiling SwiftProtobuf TextFormatDecoder.swift
+[25/99] Compiling SwiftProtobuf TextFormatDecodingError.swift
+[26/99] Compiling SwiftProtobuf TextFormatDecodingOptions.swift
+[27/99] Compiling SwiftProtobuf TextFormatEncoder.swift
+[28/99] Compiling SwiftProtobuf TextFormatEncodingOptions.swift
+[29/99] Compiling SwiftProtobuf TextFormatEncodingVisitor.swift
+[30/99] Compiling SwiftProtobuf TextFormatScanner.swift
+[31/99] Compiling SwiftProtobuf TimeUtils.swift
+[32/99] Compiling SwiftProtobuf UnknownStorage.swift
+[33/99] Compiling SwiftProtobuf UnsafeRawPointer+Shims.swift
+[34/99] Compiling SwiftProtobuf Varint.swift
+[35/99] Compiling SwiftProtobuf Version.swift
+[36/99] Compiling SwiftProtobuf Visitor.swift
+[37/99] Compiling SwiftProtobuf WireFormat.swift
+[38/99] Compiling SwiftProtobuf ZigZag.swift
+[39/99] Compiling SwiftProtobuf JSONDecoder.swift
+[40/99] Compiling SwiftProtobuf JSONDecodingError.swift
+[41/99] Compiling SwiftProtobuf JSONDecodingOptions.swift
+[42/99] Compiling SwiftProtobuf JSONEncoder.swift
+[43/99] Compiling SwiftProtobuf JSONEncodingError.swift
+[44/99] Compiling SwiftProtobuf JSONEncodingOptions.swift
+[45/99] Compiling SwiftProtobuf JSONEncodingVisitor.swift
+[46/99] Compiling SwiftProtobuf JSONMapEncodingVisitor.swift
+[47/99] Compiling SwiftProtobuf JSONScanner.swift
+[48/99] Compiling SwiftProtobuf MathUtils.swift
+[49/99] Compiling SwiftProtobuf Message+AnyAdditions.swift
+[50/99] Compiling SwiftProtobuf Message+BinaryAdditions.swift
+[51/99] Compiling SwiftProtobuf Google_Protobuf_Any+Extensions.swift
+[52/99] Compiling SwiftProtobuf Google_Protobuf_Any+Registry.swift
+[53/99] Compiling SwiftProtobuf Google_Protobuf_Duration+Extensions.swift
+[54/99] Compiling SwiftProtobuf Google_Protobuf_FieldMask+Extensions.swift
+[55/99] Compiling SwiftProtobuf Google_Protobuf_ListValue+Extensions.swift
+[56/99] Compiling SwiftProtobuf Google_Protobuf_NullValue+Extensions.swift
+[57/99] Compiling SwiftProtobuf Google_Protobuf_Struct+Extensions.swift
+[58/99] Compiling SwiftProtobuf Google_Protobuf_Timestamp+Extensions.swift
+[59/99] Compiling SwiftProtobuf Google_Protobuf_Value+Extensions.swift
+[60/99] Compiling SwiftProtobuf Google_Protobuf_Wrappers+Extensions.swift
+[61/99] Compiling SwiftProtobuf HashVisitor.swift
+[62/99] Compiling SwiftProtobuf Internal.swift
+[63/99] Compiling SwiftProtobuf BytecodeInterpreter.swift
+[64/99] Compiling SwiftProtobuf BytecodeReader.swift
+[65/99] Compiling SwiftProtobuf CustomJSONCodable.swift
+[66/99] Compiling SwiftProtobuf Decoder.swift
+[67/99] Compiling SwiftProtobuf DoubleParser.swift
+[68/99] Compiling SwiftProtobuf Enum.swift
+[69/99] Compiling SwiftProtobuf ExtensibleMessage.swift
+[70/99] Compiling SwiftProtobuf ExtensionFieldValueSet.swift
+[71/99] Compiling SwiftProtobuf ExtensionFields.swift
+[72/99] Compiling SwiftProtobuf ExtensionMap.swift
+[73/99] Compiling SwiftProtobuf FieldTag.swift
+[74/99] Compiling SwiftProtobuf FieldTypes.swift
+[75/99] Emitting module SwiftProtobuf
+[76/99] Compiling SwiftProtobuf AnyMessageStorage.swift
+[77/99] Compiling SwiftProtobuf AnyUnpackError.swift
+[78/99] Compiling SwiftProtobuf AsyncMessageSequence.swift
+[79/99] Compiling SwiftProtobuf BinaryDecoder.swift
+[80/99] Compiling SwiftProtobuf BinaryDecodingError.swift
+[81/99] Compiling SwiftProtobuf BinaryDecodingOptions.swift
+[82/99] Compiling SwiftProtobuf BinaryDelimited.swift
+[83/99] Compiling SwiftProtobuf BinaryEncoder.swift
+[84/99] Compiling SwiftProtobuf BinaryEncodingError.swift
+[85/99] Compiling SwiftProtobuf BinaryEncodingOptions.swift
+[86/99] Compiling SwiftProtobuf BinaryEncodingSizeVisitor.swift
+[87/99] Compiling SwiftProtobuf BinaryEncodingVisitor.swift
+[88/99] Compiling SwiftProtobuf any.pb.swift
+[89/99] Compiling SwiftProtobuf api.pb.swift
+[90/99] Compiling SwiftProtobuf descriptor.pb.swift
+[91/99] Compiling SwiftProtobuf duration.pb.swift
+[92/99] Compiling SwiftProtobuf empty.pb.swift
+[93/99] Compiling SwiftProtobuf field_mask.pb.swift
+[94/99] Compiling SwiftProtobuf source_context.pb.swift
+[95/99] Compiling SwiftProtobuf struct.pb.swift
+[96/99] Compiling SwiftProtobuf timestamp.pb.swift
+[97/99] Compiling SwiftProtobuf type.pb.swift
+[98/99] Compiling SwiftProtobuf wrappers.pb.swift
+Build complete! (16.01s)
+[0/1] Planning build
+Building for debugging...
+[0/2] Write swift-version-5BD8B568FD16BF8B.txt
+Build complete! (0.76s)
+[0/1] Planning build
+[1/1] Compiling plugin GenerateManual
+[2/2] Compiling plugin GenerateDoccReference
+Building for debugging...
+[2/4] Write swift-version-5BD8B568FD16BF8B.txt
+Build complete! (3.73s)
+warning: prohibited flag(s): -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -mfpmath=sse, -msse, -msse2, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread
+warning: prohibited flag(s): -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread
+[0/4] Write swift-version-5BD8B568FD16BF8B.txt
+[1/4] Wrapping AST for SwiftTermBuildInfoGenerator for debugging
+[2/4] Write Objects.LinkFileList
+[3/4] Linking SwiftTermBuildInfoGenerator-tool
+warning: prohibited flag(s): -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -mfpmath=sse, -msse, -msse2, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread
+warning: prohibited flag(s): -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread, -pthread
+[0/1] Planning build
+[1/1] Compiling plugin JExtractSwiftPlugin
+[2/2] Compiling plugin SwiftJavaPlugin
+[3/3] Compiling plugin JavaCompilerPlugin
+[4/4] Compiling plugin GenerateManual
+[5/5] Compiling plugin GenerateDoccReference
+[6/6] Compiling plugin SwiftTermBuildInfoPlugin
+Building for debugging...
+[6/11] Write swift-version-5BD8B568FD16BF8B.txt
+[7/13] Wrapping AST for SwiftTermBuildInfoGenerator for debugging
+[8/13] Write Objects.LinkFileList
+[9/13] Linking SwiftTermBuildInfoGenerator-tool
+[10/13] Generate SwiftTerm build information
+Build complete! (19.38s)

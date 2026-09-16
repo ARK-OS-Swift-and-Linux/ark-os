@@ -16,13 +16,13 @@ curl -fsSL https://raw.githubusercontent.com/ARK-OS-Swift-and-Linux/main/refs/he
 > This is to reduce the size of the project on servers!
 
 ```
-[ 2/5 ] Add Display Support
+[ 2/4 ] Add Display Support
     
-    [ Finished ]   Fix Build, Git, and Management
-    [ 1 day ]      Add Display Support
-    [ Pending ]    Complete arkrt 
-    [ 1h 2m ]      Add arm64 compile support to aake
-    [ Pending ]    Update Documentation
+    [ Finished ]     Fix Build, Git, and Management
+    [ 1 day ]        Make sash in working condition
+    [ Pending ]      Add arm64 compile support to aake
+    [ Pending ]      Update Documentation
+    [ Postponded ]   Add Display Support
 ```
 ## Building
 
