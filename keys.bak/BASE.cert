@@ -1,9 +1,0 @@
-{
-  "algorithm": "Ed25519",
-  "fingerprint": "9bc373a109261b3232308491a2e1e266a62ca503d958434d476c54d7421f3fc4370272b90967d6c5cf6b374927728b54db382ba01b20bd85e19f045fce102ae2",
-  "format": "ARK-OS-KEY-CERT-1",
-  "public_key": "Sm/NknFmWVg517jn68q1X8ZgfyZwPylIL8NCcQDDCLg=",
-  "role": "BASE",
-  "root": "MAIN",
-  "signature": "96ML30YTyQk4K7/vpZ9EtedypFPC+AmzZXwed34YK82RdYp8HVcE5X4v/rNc1jUCz4HcGoInKvGvLbfZaLENCg=="
-}
