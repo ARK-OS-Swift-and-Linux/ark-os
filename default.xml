@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remote definitions for ARK-OS repositories -->
+  <remote name="origin"
+          fetch="git@github.com:ARK-OS-Swift-and-Linux" />
+
+  <!-- Default settings for all tracked projects -->
+  <default revision="master"
+           remote="origin"
+           sync-j="4" />
+
+  <!-- ARK-OS Subsystem Repositories -->
+  <project path="host-tools" name="ark-os-host-tools.git" />
+  <project path="docs" name="ark-os-docs.git" />
+  <project path="components" name="ark-os-components.git" />
+  <project path="devtools" name="ark-os-devtools.git" />
+  <project path="tests" name="ark-os-tests.git" />
+  <project path="manifests" name="ark-os-manifests.git" />
+  <project path="external" name="ark-os-external.git" />
+  <project path="sdk" name="ark-os-sdk.git" />
+  <project path="packaging" name="ark-os-packaging.git" />
+</manifest>
