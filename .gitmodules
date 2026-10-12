@@ -1,0 +1,27 @@
+[submodule "components"]
+	path = components
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-components.git
+[submodule "devtools"]
+	path = devtools
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-devtools.git
+[submodule "docs"]
+	path = docs
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-docs.git
+[submodule "external"]
+	path = external
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-external.git
+[submodule "host-tools"]
+	path = host-tools
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-host-tools.git
+[submodule "manifests"]
+	path = manifests
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-manifests.git
+[submodule "packaging"]
+	path = packaging
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-packaging.git
+[submodule "sdk"]
+	path = sdk
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-sdk.git
+[submodule "tests"]
+	path = tests
+	url = git@github.com:ARK-OS-Swift-and-Linux/ark-os-tests.git
