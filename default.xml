@@ -19,4 +19,5 @@
   <project path="external" name="ark-os-external.git" />
   <project path="sdk" name="ark-os-sdk.git" />
   <project path="packaging" name="ark-os-packaging.git" />
+  <project path="components/libraries/libark" name="libark.git" />
 </manifest>

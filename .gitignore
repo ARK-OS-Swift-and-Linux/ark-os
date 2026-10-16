@@ -1,1 +1,4 @@
 scratch/
+.gitignore
+.ninja_log
+out/

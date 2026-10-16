@@ -4,20 +4,24 @@ ARK-OS is an independent operating-system project focused on building an underst
 
 The project is designed to combine the accessibility and cohesive user experience of modern consumer platforms with the transparency, openness, and customizability of a modular Unix-like system. Its architecture emphasizes strong process isolation, a minimal and audit-friendly system foundation, and deliberate separation between core system components.
 
-ARK-OS is currently in an early architectural baseline stage. No source code, toolchain binaries, or bootable system images are implemented yet.
+ARK-OS is an operating system ecosystem with a Swift-first userspace and a Linux kernel foundation. The project has implemented its core foundational subsystems: the `libark` system library, the two-stage `arkrt` runtime and service supervisor, the native C `aake` build orchestrator, the `ARKBOOT.EFI` UEFI bootloader, and the musl libc / mimalloc sysbuilts pipeline.
 
 ---
 
 ## Current Status
 
-- **Status:** Architectural Baseline (Specification and Organization)
-- **Source Code Implementation:** Not implemented
-- **Build System Implementation:** Not implemented
-- **Bootable Artifacts:** None
-- **Initial Target Architecture:** x86_64 (Planned)
-- **Secondary Target Architecture:** ARM64 (Future milestone, not yet implemented)
+- **Status:** Foundational Runtime & Toolchain Implemented
+- **Core System Library (`libark`):** Implemented and verified (51 passing unit tests)
+- **Initialization Runtime (`arkrt`):** Implemented and verified (C starter + Swift supervisor, 14 passing lifecycle tests)
+- **Build Orchestrator (`aake`):** Implemented and verified (Native C executable backed by Ninja, `envsetup.sh` integration)
+- **Bootloader (`ARKBOOT.EFI`):** Implemented and verified (GNU-EFI x86_64 UEFI bootloader, Stage A dot + Stage B Linux handoff)
+- **Target Sysroot (`Sysbuilts`):** Implemented and verified (musl libc v1.2.5 + mimalloc v2.1.9, automated CI releases)
+- **Kernel Foundation:** Implemented and verified (Linux Zen Kernel v7.2.10-zen1, automated sync via `sync.sh`)
+- **Initial Target Architecture:** x86_64 (Active and tested under QEMU UEFI/Direct boot)
+- **Secondary Target Architecture:** ARM64 (Planned future milestone)
 
-All component descriptions, interfaces, and boot flows in this repository represent architectural specifications and engineering intent. They do not represent functional software at this time.
+For the detailed, evidence-based status report, subsystem map, and verification matrix, see:  
+[docs/architecture/ARK-OS-STATE-AND-ARCHITECTURE.md](file:///home/aarav/repo/arkos/docs/architecture/ARK-OS-STATE-AND-ARCHITECTURE.md).
 
 ---
 
@@ -87,24 +91,38 @@ When implementation begins, developing ARK-OS will require the following host en
 ---
 
 ## Getting Started
+ 
+To initialize the ARK-OS build environment and verify toolchain dependencies:
+ 
+```bash
+# 1. Source the environment setup script (from repository root)
+source envsetup.sh
 
-Because ARK-OS is currently at the architectural baseline stage, there are no build artifacts to compile or execute.
+# 2. Run the Aake environment doctor
+aake doctor
 
-Developers and contributors should begin by reviewing the project documentation:
-
+# 3. Execute unit and integration tests
+aake test
+```
+ 
+For detailed subsystem documentation and specifications:
+ 
 1. **AI & Engineering Rules:** Read [AGENTS.md](file:///home/aarav/repo/arkos/AGENTS.md) for mandatory repository standards, safety invariants, and constraints.
-2. **System Architecture:** Review [docs/architecture/overview.md](file:///home/aarav/repo/arkos/docs/architecture/overview.md) for component boundaries and execution flow.
-3. **Component Documentation:** Inspect specifications in [docs/architecture/components/](file:///home/aarav/repo/arkos/docs/architecture/components/).
+2. **System State and Architecture:** Review [docs/architecture/ARK-OS-STATE-AND-ARCHITECTURE.md](file:///home/aarav/repo/arkos/docs/architecture/ARK-OS-STATE-AND-ARCHITECTURE.md).
+3. **Component Specifications:** Inspect specifications in [docs/architecture/components/](file:///home/aarav/repo/arkos/docs/architecture/components/).
 4. **Architectural Decisions:** Review accepted decisions and open questions in [docs/decisions/](file:///home/aarav/repo/arkos/docs/decisions/).
-5. **Development Workflow:** Refer to [docs/development/index.md](file:///home/aarav/repo/arkos/docs/development/index.md) for contributor setup guidance.
-
+5. **Development Workflow:** Refer to [docs/development/index.md](file:///home/aarav/repo/arkos/docs/development/index.md).
+ 
 ---
-
+ 
 ## Verification and Testing
-
-No automated builds, tests, or boot simulations are available at this time. 
-
-All verification currently consists of static file inspection and documentation review. Commands that execute builds, test runs, or kernel boots must not be invoked until functional implementations and harnesses are committed and authorized.
+ 
+Automated builds and tests are implemented and accessible via `aake`:
+ 
+- **Core Library Tests:** `cd components/libraries/libark && swift test` (51 unit tests)
+- **Supervisor Tests:** `cd components/runtime/arkrt && make test` (14 supervisor lifecycle tests)
+- **Top-Level Orchestration:** `aake test` (runs full test suite)
+- **Bootloader Compilation:** `make -C components/boot` (`ARKBOOT.EFI`)
 
 ---
 
